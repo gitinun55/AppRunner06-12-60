@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivityAddEvent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="ลงทะเบียนจัดกิจกรรมงานวิ่ง"
+            android:fontFamily="@font/opunmairegular"/>
+
+        <RelativeLayout
+            android:id="@+id/path_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_white"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/btn_addPicture"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="50dp"
+                android:textSize="11dp"
+                android:background="@drawable/round_blue"
+                android:text="choose picture" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/path_picture">
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:text="ชื่อผู้ติดต่อ *        :"
+                android:textSize="16sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <EditText
+                android:id="@+id/userEDT"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:background="@drawable/round_white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NameEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name">
+
+            <TextView
+                android:id="@+id/Name_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:text="ชื่องาน *              :"
+                android:textSize="16sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <EditText
+                android:id="@+id/eventEDT"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/round_white"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/producer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameEvent">
+
+            <TextView
+                android:id="@+id/name_producer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="ชื่อคณะผู้จัดทำ * :"
+                android:textSize="16sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <EditText
+                android:id="@+id/producerEDT"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/round_white"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/producer">
+
+            <TextView
+                android:id="@+id/date_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="วันเริ่มสมัคร *         : "
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <TextView
+                android:id="@+id/tv_date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:text="dd / mm / yyyy"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_pickDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="11dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_blue"
+                android:layout_marginLeft="280dp"
+                android:text="choose" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start">
+
+            <TextView
+                android:id="@+id/date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:text="วันหมดเขตสมัคร * : "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular"/>
+            <TextView
+                android:id="@+id/tv_date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="10dp"
+                android:text="dd / mm / yyyy"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_pickDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="10dp"
+                android:textSize="11dp"
+                android:background="@drawable/round_blue"
+                android:text="choose" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end">
+
+            <TextView
+                android:id="@+id/price_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ค่าสมัคร/ระยะทาง  :"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:fontFamily="@font/opunmairegular"/>
+
+            <LinearLayout
+                android:id="@+id/layout_list"
+                android:layout_below="@id/price_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"/>
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/layout_list"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:text="เพิ่มราคาและระยะทางวิ่ง  "
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_blue"
+                android:drawableRight="@drawable/ic_baseline_add_24"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/obj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price">
+
+            <TextView
+                android:id="@+id/Objective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="วัถตุประสงค์ของงาน *:"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular"/>
+
+            <EditText
+                android:id="@+id/objectiveEDT"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/Objective"
+                android:inputType="text|textMultiLine"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_white"
+                android:gravity="top"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obj">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="รายละเอียดของงาน *:"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/opunmairegular"/>
+
+            <EditText
+                android:id="@+id/detailsEDT"
+                android:layout_width="390dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/details"
+                android:inputType="text|textMultiLine"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_white"
+                android:gravity="top"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/det"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/btnRegEvent"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_green"
+                android:text="ลงทะเบียน"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/opunmairegular"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/btnRegEvent"
+                android:background="@drawable/round_red"
+                android:text="ยกเลิก"
+                android:textSize="20sp"
+                android:fontFamily="@font/opunmairegular"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="880dp"></RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

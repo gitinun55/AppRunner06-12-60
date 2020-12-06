@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apprunner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Camera and storage permission will be required -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Virtual Running "
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UplodePaymentActivity"></activity>
+        <activity android:name=".SelectPaymentUserAdapter" />
+        <activity android:name=".SelectPaymentUserActivity" />
+        <activity android:name=".DetailPaymentUserActivity" />
+        <activity android:name=".Select_user_paymentAdapter" />
+        <activity android:name=".Select_user_paymentActivity" />
+        <activity android:name=".Select_event_paymentAdapter" />
+        <activity android:name=".Select_event_paymentActivity" />
+        <activity android:name=".ListNameRegEventAdapter" />
+        <activity android:name=".ListNameRegEventActivity" />
+        <activity android:name=".DetailEventOrganizerActivity" />
+        <activity android:name=".Event_profileAdapter" />
+        <activity android:name=".Event_profile_organizerActivity" />
+        <activity android:name=".MenuEventUser" />
+        <activity android:name=".SelectUserUplodeActivity" />
+        <activity android:name=".ShowDistanceEventActivity" />
+        <activity android:name=".EditProfileUserActivity" />
+        <activity android:name=".UplodeStatistics" />
+        <activity android:name=".EventProfileUplodeActivity" />
+        <activity android:name=".DetailEventUserActivity" />
+        <activity android:name=".RegAddressActivity" />
+        <activity android:name=".RegEventActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterappActivity" />
+        <activity
+            android:name=".SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivityAddEvent" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityCricketers" /> <!-- add in application tag -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
